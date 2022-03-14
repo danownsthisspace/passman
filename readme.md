@@ -8,10 +8,12 @@ https://babashka.org/
 
 ### Run Project
 
-  bb -m passman.app
+  `bb -m passman.app`
 
 ### Compile to uberscript
 
-  ./create-uberscript.sh 
+  `./create-uberscript.sh`
+
+
 
 
