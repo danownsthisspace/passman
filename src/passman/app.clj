@@ -22,10 +22,8 @@
   (String. (.readPassword (System/console))))
 
 (defn -main [& args]
-  (let [parsed-options (parse-opts args cli-options)
-        url (first (:arguments parsed-options))
-        username (second (:arguments parsed-options))
-        options (:options parsed-options)]
+  (let [{:keys [arguments options]} (parse-opts args cli-options)
+        [url username] arguments]
     (cond
       (:generate options) (do
                             (stash/stash-init (password-input))
