@@ -4,7 +4,7 @@
 ;; https://github.com/rorokimdim/stash
 (def ^{:doc "path to stash file"} stash-file-path "passman.stash")
 
-(babashka.pods/load-pod 'rorokimdim/stash "0.2.0")
+(babashka.pods/load-pod 'rorokimdim/stash "0.3.1")
 
 (require '[pod.rorokimdim.stash :as stash])
 
